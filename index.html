@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="unidosccristo: aplicativo de uso pessoal para gerar e agendar conteúdo cristão em redes sociais.">
+  <meta name="theme-color" content="#f7f2e8">
+  <title>unidosccristo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="marca" href="index.html" aria-label="unidosccristo — início">
+        <span class="marca-simbolo" aria-hidden="true">U</span>
+        <span>unidosccristo</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div>
+        <p class="eyebrow">Conteúdo cristão para redes sociais</p>
+        <h1 id="titulo-principal">Palavras que alcançam pessoas.</h1>
+        <p>
+          O <strong>unidosccristo</strong> é um aplicativo de uso pessoal que gera imagens,
+          carrosséis e vídeos verticais com frases e versículos. Também organiza e publica
+          o conteúdo nas redes sociais autorizadas pelo próprio usuário.
+        </p>
+        <div class="actions">
+          <a class="botao botao-primario" href="privacidade.html">Política de Privacidade</a>
+          <a class="botao botao-secundario" href="termos.html">Termos de Uso</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resumo do aplicativo">
+        <h2>Como funciona</h2>
+        <ul>
+          <li>Geração local de posts e reels</li>
+          <li>Agendamento por rede social</li>
+          <li>Publicação com APIs oficiais</li>
+          <li>Credenciais mantidas na máquina do usuário</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="o-que-faz">
+      <div class="section-heading">
+        <h2 id="o-que-faz">O que o aplicativo faz</h2>
+        <p>
+          A ferramenta foi criada para apoiar a produção e a distribuição de conteúdo
+          cristão de forma simples, com controle local dos arquivos e das credenciais.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Criação de conteúdo</h3>
+          <p>
+            Monta imagens de feed, stories e vídeos verticais com texto, autor,
+            identificação e identidade visual.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Agendamento</h3>
+          <p>
+            Organiza data, hora, legenda e redes sociais em uma agenda local.
+            O usuário decide o que será publicado e quando.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Publicação autorizada</h3>
+          <p>
+            Usa APIs oficiais para publicar somente nas contas que o usuário
+            autorizou explicitamente.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="google">
+      <div class="section-heading">
+        <h2 id="google">Integração com o Google e o YouTube</h2>
+        <p>
+          O acesso ao YouTube é limitado ao envio de vídeos para o canal autorizado.
+        </p>
+      </div>
+
+      <div class="callout">
+        <p>
+          O aplicativo solicita apenas o escopo
+          <code>https://www.googleapis.com/auth/youtube.upload</code>.
+          Ele não lê e-mails, inscritos, histórico de visualização ou dados de espectadores.
+        </p>
+      </div>
+
+      <p>
+        O token de atualização do Google fica armazenado localmente, no arquivo
+        <code>.env</code>, na máquina do usuário. O aplicativo não envia esse token
+        para um servidor do desenvolvedor. O usuário pode revogar o acesso a qualquer
+        momento na página de permissões da Conta Google.
+      </p>
+
+      <div class="actions">
+        <a class="botao botao-secundario" href="https://myaccount.google.com/permissions" rel="noopener noreferrer">
+          Gerenciar permissões da Conta Google
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contato">
+      <div class="section-heading">
+        <h2 id="contato">Contato</h2>
+        <p>
+          Dúvidas sobre privacidade, termos ou funcionamento do aplicativo podem ser
+          enviadas para o endereço abaixo.
+        </p>
+      </div>
+
+      <p>
+        <a href="mailto:unidosccristo@hotmail.com">unidosccristo@hotmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 unidosccristo. Aplicativo de uso pessoal.</span>
+      <nav aria-label="Links do rodapé">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+        <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Permissões Google</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

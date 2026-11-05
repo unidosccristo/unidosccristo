@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do aplicativo unidosccristo.">
+  <meta name="theme-color" content="#f7f2e8">
+  <title>Política de Privacidade — unidosccristo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="marca" href="index.html" aria-label="unidosccristo — início">
+        <span class="marca-simbolo" aria-hidden="true">U</span>
+        <span>unidosccristo</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="privacidade.html" aria-current="page">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container legal">
+    <h1>Política de Privacidade</h1>
+    <p class="atualizado">Última atualização: 5 de novembro de 2026.</p>
+
+    <p>
+      Esta Política de Privacidade descreve como o aplicativo <strong>unidosccristo</strong>
+      acessa, usa, armazena e protege dados. Ela se aplica ao aplicativo e a este site.
+    </p>
+
+    <div class="callout">
+      <p>
+        O unidosccristo é uma ferramenta de uso pessoal. Ela roda na máquina do
+        próprio usuário e não é oferecida como serviço público hospedado pelo desenvolvedor.
+      </p>
+    </div>
+
+    <h2>1. Quem é responsável</h2>
+    <p>
+      O responsável pelo aplicativo é o desenvolvedor do projeto unidosccristo.
+      O contato para assuntos de privacidade é
+      <a href="mailto:unidosccristo@hotmail.com">unidosccristo@hotmail.com</a>.
+    </p>
+
+    <h2>2. Dados acessados</h2>
+    <p>O aplicativo pode acessar e tratar as seguintes informações:</p>
+    <ul>
+      <li>
+        <strong>Credenciais de autorização:</strong> identificador do cliente OAuth,
+        segredo do cliente e token de atualização do Google. Esses dados ficam no
+        arquivo <code>.env</code> e no arquivo de credenciais do cliente, na máquina do usuário.
+      </li>
+      <li>
+        <strong>Conteúdo enviado:</strong> vídeos, títulos, descrições e legendas que o
+        usuário escolhe publicar. Esses dados são enviados à API do YouTube e às demais
+        plataformas selecionadas pelo usuário.
+      </li>
+      <li>
+        <strong>Identificadores de publicação:</strong> código do vídeo ou da publicação
+        retornado pelas plataformas, usado para registrar o resultado e evitar envios duplicados.
+      </li>
+      <li>
+        <strong>Registros locais:</strong> data, hora, nome do arquivo, rede social,
+        mensagens de erro e resultado da publicação. Esses registros ficam em arquivos
+        locais do projeto.
+      </li>
+      <li>
+        <strong>Credenciais de outras plataformas:</strong> tokens do Instagram, Threads,
+        Facebook, Telegram, TikTok, Metricool e Cloudinary, quando configurados pelo usuário.
+        Eles também ficam no arquivo <code>.env</code>, na máquina do usuário.
+      </li>
+    </ul>
+
+    <h2>3. Dados do Google e do YouTube</h2>
+    <p>
+      O aplicativo solicita apenas o escopo
+      <code>https://www.googleapis.com/auth/youtube.upload</code>, necessário para
+      enviar vídeos ao canal do YouTube autorizado pelo usuário.
+    </p>
+    <p>O aplicativo não acessa:</p>
+    <ul>
+      <li>e-mails ou dados de perfil da Conta Google;</li>
+      <li>lista de inscritos, histórico de visualização ou comentários;</li>
+      <li>dados de espectadores, como idade, localização ou preferências;</li>
+      <li>outros canais ou contas que não tenham sido autorizados pelo usuário.</li>
+    </ul>
+    <p>
+      O uso de informações recebidas das APIs do Google está em conformidade com a
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">
+        Política de Dados do Usuário dos Serviços de API do Google
+      </a>, incluindo os requisitos de Uso Limitado.
+    </p>
+    <p>
+      O aplicativo não usa dados do Google para publicidade, criação de perfis,
+      venda, empréstimo ou treinamento de modelos de inteligência artificial.
+      O desenvolvedor não acessa os dados armazenados na máquina do usuário.
+    </p>
+
+    <h2>4. Como os dados são usados</h2>
+    <ul>
+      <li>Autenticar o usuário nas plataformas que ele autorizou.</li>
+      <li>Enviar o conteúdo escolhido para publicação.</li>
+      <li>Registrar o resultado da publicação e evitar reenvios duplicados.</li>
+      <li>Exibir o histórico e o status das publicações na interface local.</li>
+      <li>Diagnosticar erros de autenticação, conexão ou processamento.</li>
+    </ul>
+
+    <h2>5. Compartilhamento</h2>
+    <p>
+      O aplicativo não vende, aluga ou comercializa dados pessoais. O conteúdo e as
+      credenciais são enviados apenas às plataformas necessárias para executar a ação
+      solicitada pelo usuário:
+    </p>
+    <ul>
+      <li>Google e YouTube, para upload de vídeos;</li>
+      <li>Meta, para Instagram, Threads e Facebook;</li>
+      <li>Telegram, para publicação em canais ou grupos autorizados;</li>
+      <li>TikTok e Metricool, para agendamento e publicação de vídeos;</li>
+      <li>Cloudinary, para hospedagem temporária de mídia usada pelo TikTok.</li>
+    </ul>
+    <p>
+      Cada plataforma trata os dados conforme suas próprias políticas de privacidade.
+      O aplicativo também pode usar serviços de hospedagem, como o GitHub Pages, para
+      publicar este site. O provedor de hospedagem pode registrar dados técnicos de
+      acesso, como endereço IP e navegador, conforme a política dele.
+    </p>
+
+    <h2>6. Armazenamento e segurança</h2>
+    <p>
+      As credenciais e os registros ficam na máquina do usuário. A segurança depende
+      das proteções do computador, do controle de acesso à pasta do projeto e da
+      proteção do arquivo <code>.env</code>.
+    </p>
+    <p>
+      Backups locais podem incluir o arquivo <code>.env</code> e outros dados sensíveis.
+      O usuário deve manter esses arquivos privados e não enviá-los a repositórios
+      públicos, serviços de terceiros ou pessoas não autorizadas.
+    </p>
+
+    <h2>7. Retenção</h2>
+    <p>
+      Os tokens permanecem armazenados até o usuário removê-los, substituí-los ou
+      revogar o acesso na plataforma correspondente. Os registros locais permanecem
+      no projeto até serem apagados pelo usuário ou substituídos por uma rotina de
+      manutenção.
+    </p>
+    <p>
+      A lixeira local de mídias remove automaticamente itens com mais de 30 dias,
+      conforme a configuração do aplicativo. Backups periódicos podem manter cópias
+      por período maior, de acordo com a configuração de retenção escolhida.
+    </p>
+
+    <h2>8. Direitos do usuário</h2>
+    <p>O usuário pode, a qualquer momento:</p>
+    <ul>
+      <li>revogar o acesso do aplicativo à Conta Google;</li>
+      <li>revogar tokens de outras plataformas nas configurações de cada serviço;</li>
+      <li>apagar o arquivo <code>.env</code> e os arquivos locais de registro;</li>
+      <li>solicitar informações sobre o tratamento de dados pelo e-mail de contato.</li>
+    </ul>
+    <p>
+      Para revogar o acesso do Google, acesse
+      <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">
+        myaccount.google.com/permissions
+      </a>.
+      O usuário também pode apresentar reclamação à Autoridade Nacional de Proteção
+      de Dados (ANPD), nos termos da legislação aplicável.
+    </p>
+
+    <h2>9. Transferência internacional</h2>
+    <p>
+      As plataformas utilizadas pelo aplicativo podem processar dados fora do Brasil.
+      Ao autorizar uma publicação, o usuário reconhece que o conteúdo será enviado
+      aos servidores da plataforma escolhida, conforme a política de privacidade dela.
+    </p>
+
+    <h2>10. Cookies e analytics neste site</h2>
+    <p>
+      Este site estático não usa cookies, ferramentas de analytics ou rastreadores
+      de publicidade. O provedor de hospedagem pode registrar dados técnicos de acesso
+      para segurança e funcionamento do serviço.
+    </p>
+
+    <h2>11. Menores de idade</h2>
+    <p>
+      O aplicativo não é direcionado a menores de 13 anos. O uso por menores deve
+      ocorrer com autorização e supervisão dos responsáveis legais.
+    </p>
+
+    <h2>12. Alterações nesta política</h2>
+    <p>
+      Esta política pode ser atualizada para refletir mudanças no aplicativo, nas
+      plataformas integradas ou na legislação. A data de última atualização será
+      alterada quando houver mudança relevante.
+    </p>
+
+    <h2>13. Contato</h2>
+    <p>
+      Para dúvidas, solicitações ou reclamações sobre privacidade, escreva para
+      <a href="mailto:unidosccristo@hotmail.com">unidosccristo@hotmail.com</a>.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 unidosccristo. Aplicativo de uso pessoal.</span>
+      <nav aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="termos.html">Termos</a>
+        <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Permissões Google</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
